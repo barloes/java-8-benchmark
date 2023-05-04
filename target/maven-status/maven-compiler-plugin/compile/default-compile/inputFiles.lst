@@ -2,5 +2,5 @@
 /home/jun/personal/java-basic/src/main/java/com/example/repository/PersonHistoryRepository.java
 /home/jun/personal/java-basic/src/main/java/com/example/entity/PersonHistory.java
 /home/jun/personal/java-basic/src/main/java/com/example/App.java
-/home/jun/personal/java-basic/src/main/java/com/example/util/HibernateUtil.java
+/home/jun/personal/java-basic/src/main/java/com/example/configuration/DatabaseConfiguration.java
 /home/jun/personal/java-basic/src/main/java/com/example/entity/Person.java

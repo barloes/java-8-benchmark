@@ -4,4 +4,6 @@ Java starter project to benchmark sql commands
 
 '''
 docker-compose up -d
+
+mvn spring-boot:run
 '''
