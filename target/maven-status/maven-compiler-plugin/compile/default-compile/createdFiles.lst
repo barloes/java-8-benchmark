@@ -1,0 +1,6 @@
+com/example/App.class
+com/example/repository/PersonHistoryRepository.class
+com/example/entity/PersonHistory.class
+com/example/entity/Person.class
+com/example/repository/PersonRepository.class
+com/example/util/HibernateUtil.class
