@@ -1,6 +1,7 @@
 package com.example;
 
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.slf4j.Logger;
@@ -31,8 +32,20 @@ public class App implements CommandLineRunner{
 
     @Override
     public void run(String... args) {
+        Long startTime = System.currentTimeMillis();
         List<Person> personList = personRepository.getPersonBySysDeleteAndIsHuman(false, true);
+        List<Person> newPersonList = new ArrayList<>();
 
-        logger.info("Person count {}", personList.size());
+        Long count = 0L;
+        for (Person person : personList) {
+            person.setSysDelete(true);
+            newPersonList.add(person);
+            count += 1;
+        }
+
+        personRepository.saveAll(newPersonList);
+
+        Long timeTaken = System.currentTimeMillis() - startTime;
+        logger.info("Time taken to update {} records: {} ms", count, timeTaken);
     }
 }

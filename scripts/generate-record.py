@@ -10,13 +10,13 @@ INSERT INTO `person` (`name`, `sysDelete`, `isHuman`) VALUES
 import random
 import string
 
-
+n = 10000
 insert_string = "INSERT INTO `person` (`name`, `sysDelete`, `isHuman`) VALUES\n"
-for i in range(100000):
+for i in range(n):
     for combinations in [(0, 0), (0, 1), (1, 0), (1, 1)]:
         random_name = ''.join(random.choice(string.ascii_lowercase) for _ in range(10))
         insert_string += "('{}', {}, {})".format(random_name, combinations[0], combinations[1])
-        insert_string += ",\n" if i != 99999 or combinations != (1, 1) else ";\n"
+        insert_string += ",\n" if i != n-1 or combinations != (1, 1) else ";\n"
 
 # create file 
 
