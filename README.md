@@ -33,6 +33,7 @@ update 10000 records - 8 seconds (saveAll with Multi Threading) after batch opti
 - multithreading works with UUID Id but not GenerationType.IDENTITY id
 ```
 
+# Important
 ```
 - async operation for adding history 
 - enable hibernate statistics
