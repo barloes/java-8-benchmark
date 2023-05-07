@@ -8,11 +8,12 @@ mvn spring-boot:run
 ```
 
 ```agsl
+batch optimisation refers to changing id to UUID
 No significant difference after changing id to UUID when using saveAll, save and manual.
 
 insert 10000 records - 30 seconds (saveAll)
 insert 10000 records - 15 seconds (native query)
-inserting 10000 records - 4 seconds (8 threads using saveAll)
+inserting 10000 records - 4 seconds (saveAll with Multi Threding)
 
 update 10000 records - 15 seconds (saveAll)
 update 10000 records - 12 seconds (saveAll) after batch optimisation
