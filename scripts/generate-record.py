@@ -10,7 +10,7 @@ INSERT INTO `person` (`name`, `sysDelete`, `isHuman`) VALUES
 import random
 import string
 
-n = 10000
+n = 5000
 insert_string = "INSERT INTO `person` (`name`, `sysDelete`, `isHuman`) VALUES\n"
 for i in range(n):
     for combinations in [(0, 0), (0, 1), (1, 0), (1, 1)]:
